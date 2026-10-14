@@ -1,0 +1,17 @@
+game_process: bluearchive.exe
+game_window_title: Blue Archive
+logs_level: DEBUG
+
+start_game: True
+prepare_game: False
+
+cafe:
+  collect_earnings: False
+  invite_cafe_1: False
+  invite_cafe_2: False
+  characters_touch_cafe_1: False
+  characters_touch_cafe_2: False
+
+social:
+  club_reward_claim: False
+
