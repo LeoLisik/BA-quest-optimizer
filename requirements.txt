@@ -4,3 +4,4 @@ PyAutoGUI~=0.9.54
 PyScreeze~=1.0.1
 PyYAML~=6.0
 opencv-python~=4.11.0.86
+Pillow
