@@ -58,15 +58,14 @@ def prepare_game():
     logger.info('Prepare game finished')
 
 def setup_logging():
+    formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
+
     console_handler = logging.StreamHandler(stream=sys.stdout)
     console_handler.setLevel(config.logs_level)
 
     file_handler = logging.FileHandler('app.log')
     file_handler.setLevel(config.logs_level)
-
-    logging.basicConfig(
-        format="%(asctime)s - %(levelname)s - %(message)s"
-    )
+    file_handler.setFormatter(formatter)
 
     logger = logging.getLogger()
     logger.setLevel(config.logs_level)
